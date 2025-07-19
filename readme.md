@@ -45,20 +45,25 @@ ASL_HANDSIGN_PYTORCH/
 
 ### 1. Clone the repository
 
-```bash
 git clone https://github.com/yourusername/ASL_HANDSIGN_PYTORCH.git
 cd ASL_HANDSIGN_PYTORCH
 
 ## 2. Create and activate a virtual environment
+
 python -m venv venv
 
 # Activate it
+
 # On Windows:
+
 venv\Scripts\activate
+
 # On macOS/Linux:
+
 source venv/bin/activate
 
-#3. Install dependencies
+# 3. Install dependencies
+
 pip install -r requirements.txt
 
 📁 Dataset Setup
@@ -68,79 +73,36 @@ Download the ASL Alphabet Dataset from Kaggle:
 After downloading and extracting:
 
 Place training data inside:
-
-bash
-Copy
-Edit
 data/asl_alphabet_train/
-Place test data inside:
 
-bash
-Copy
-Edit
+Place test data inside:
 data/asl_alphabet_test/
+
 ⚠️ The dataset is not included in the repo due to size.
 
 🧠 Model Training
 To train the model on your local machine:
-
-bash
-Copy
-Edit
 python train.py
-After training, the model will be saved at:
 
-bash
-Copy
-Edit
+After training, the model will be saved at:
 data/saved_models/asl_model.pth
+
 🧪 Test DataLoader
 Check if dataset is loading correctly:
-
-bash
-Copy
-Edit
 python test_dataloader.py
+
 🎯 Evaluate the Model
 Use evaluate.py to get test accuracy:
-
-bash
-Copy
-Edit
 python src/evaluate.py
+
 🌐 Run the Real-Time Streamlit App
 Launch the web app:
-
-bash
-Copy
-Edit
 streamlit run app/app.py
 The webcam will turn on. Show ASL signs one at a time to get predictions with audio feedback.
 
 🔊 Voice Output
 Voice output is powered by pyttsx3.
 
-For Linux, install this additional package if needed:
-
-bash
-Copy
-Edit
-sudo apt-get install espeak
-📝 .gitignore Example
-Here’s a sample .gitignore for your repo:
-
-bash
-Copy
-Edit
-__pycache__/
-*.pyc
-*.pth
-*.log
-venv/
-*.DS_Store
-data/saved_models/
-data/asl_alphabet_train/
-data/asl_alphabet_test/
 💡 Tips
 Make sure your hand is clearly visible to the webcam
 
@@ -162,5 +124,6 @@ Passionate about AI, Deep Learning, and Full-Stack Development
 ⭐ Support
 If you find this project useful, please consider giving it a ⭐ on GitHub. Thank you! 😊
 
+```
 
 ```
