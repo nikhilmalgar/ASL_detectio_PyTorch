@@ -1,0 +1,10 @@
+venv310/
+__pycache__/
+*.pt
+*.h5
+*.pkl
+*.zip
+*.tar.gz
+*.log
+data/asl_alphabet_train/
+data/asl_alphabet_test/
