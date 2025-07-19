@@ -18,26 +18,26 @@ This project is a real-time American Sign Language (ASL) hand sign recognition s
 
 ## 📂 Project Structure
 
-ASL_HANDSIGN_PYTORCH/
-│
-├── app/ # Streamlit app with real-time webcam prediction
-│ └── app.py
-│
-├── src/ # Source files for the model and dataloader
-│ ├── dataset.py
-│ ├── evaluate.py
-│ └── model.py
-│
-├── data/ # Dataset and model checkpoints
-│ ├── asl_alphabet_train/
-│ ├── asl_alphabet_test/
-│ └── saved_models/
-│
-├── train.py # Training script
-├── test_dataloader.py # Data loading test script
-├── requirements.txt # Python dependencies
-├── README.md # Project documentation
-└── .gitignore # Files to ignore in Git
+                ASL_HANDSIGN_PYTORCH/
+                │
+                ├── app/ # Streamlit app with real-time webcam prediction
+                │ └── app.py
+                │
+                ├── src/ # Source files for the model and dataloader
+                │ ├── dataset.py
+                │ ├── evaluate.py
+                │ └── model.py
+                │
+                ├── data/ # Dataset and model checkpoints
+                │ ├── asl_alphabet_train/
+                │ ├── asl_alphabet_test/
+                │ └── saved_models/
+                │
+                ├── train.py # Training script
+                ├── test_dataloader.py # Data loading test script
+                ├── requirements.txt # Python dependencies
+                ├── README.md # Project documentation
+                └── .gitignore # Files to ignore in Git
 
 ---
 
@@ -45,8 +45,7 @@ ASL_HANDSIGN_PYTORCH/
 
 ### 1. Clone the repository
 
-git clone https://github.com/yourusername/ASL_HANDSIGN_PYTORCH.git
-cd ASL_HANDSIGN_PYTORCH
+git clone https://github.com/nikhilmalgar/ASL_detectio_PyTorch.git
 
 ## 2. Create and activate a virtual environment
 
@@ -82,28 +81,36 @@ data/asl_alphabet_test/
 
 🧠 Model Training
 To train the model on your local machine:
+
 python train.py
 
 After training, the model will be saved at:
+
 data/saved_models/asl_model.pth
 
 🧪 Test DataLoader
 Check if dataset is loading correctly:
+
 python test_dataloader.py
 
 🎯 Evaluate the Model
 Use evaluate.py to get test accuracy:
+
 python src/evaluate.py
 
 🌐 Run the Real-Time Streamlit App
+
 Launch the web app:
+
 streamlit run app/app.py
 The webcam will turn on. Show ASL signs one at a time to get predictions with audio feedback.
 
 🔊 Voice Output
+
 Voice output is powered by pyttsx3.
 
 💡 Tips
+
 Make sure your hand is clearly visible to the webcam
 
 Use plain backgrounds and good lighting
@@ -113,17 +120,16 @@ Use same size/image orientation as dataset samples
 Train for more epochs or augment the dataset to improve accuracy
 
 📃 License
+
 This project is licensed under the MIT License.
 
 🙋‍♂️ Author
+
 Nikhil Malagar
 B.Tech in CSE (AI & ML)
 Passionate about AI, Deep Learning, and Full-Stack Development
 🔗 GitHub: @nikhilmalgar
 
 ⭐ Support
+
 If you find this project useful, please consider giving it a ⭐ on GitHub. Thank you! 😊
-
-```
-
-```
